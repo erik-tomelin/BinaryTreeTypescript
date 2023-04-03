@@ -28,19 +28,19 @@ class SearchBinaryTree {
 
                 if (value < currentTreeNode.value) {
                     if (!currentTreeNode.pointerLeft) {
-                    currentTreeNode.pointerLeft = newTreeNode;
-                    console.log(`Inserido ${value} a esquerda do ${currentTreeNode.value}`);
+                      currentTreeNode.pointerLeft = newTreeNode;
+                      console.log(`Inserido ${value} a esquerda do ${currentTreeNode.value}`);
 
-                    return;
+                      return;
                     }
 
                     currentTreeNode = currentTreeNode.pointerLeft;
                 } else {
                     if (!currentTreeNode.pointerRight) {
-                    currentTreeNode.pointerRight = newTreeNode;
-                    console.log(`Inserido ${value} a direita do ${currentTreeNode.value}`);
+                      currentTreeNode.pointerRight = newTreeNode;
+                      console.log(`Inserido ${value} a direita do ${currentTreeNode.value}`);
 
-                    return;
+                      return;
                     }
 
                     currentTreeNode = currentTreeNode.pointerRight;
